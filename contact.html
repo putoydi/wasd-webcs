@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WASD Keyboards | Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="img/logo.png">Keyboards</div>
+    <button id="menu-btn">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <h1>Lock it in and call us.</h1>
+    <p>Interested or looking for more? Contact us through these channels:</p>
+    <p><b>0999 (222) 1111</b><br>wasdkeyboards@gmail.com</p>
+    <p>You can also visit our physical store:</p>
+    <p><b>DMC Building, 1271 MacArthur Hwy, Angeles, 2009 Pampanga</b></p>
+
+    <h2>Store Hours:</h2>
+    <section class="schedule-section">
+  <h3>Operating Hours</h3>
+  <table class="schedule-table">
+    <thead>
+      <tr>
+        <th>Days</th>
+        <th>Opens</th>
+        <th>Closes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>2:00pm</td>
+        <td>8:00pm</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>2:00pm</td>
+        <td>8:00pm</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>Closed</td>
+        <td>Closed</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>2:00pm</td>
+        <td>8:00pm</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>2:00pm</td>
+        <td>8:00pm</td>
+      </tr>
+      <tr>
+        <td>Weekends</td>
+        <td>Closed</td>
+        <td>Closed</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© Copyright 2025 | WASD Keyboards | All rights reserved</p>
+  </footer>
+  <script>
+    let menuBtn = document.getElementById("menu-btn");
+    let navMenu = document.getElementById("nav-menu");
+
+    menuBtn.addEventListener("click", function() {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
