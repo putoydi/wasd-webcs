@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WASD Keyboards | Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="img/logo.png">Keyboards</div>
+    <button id="menu-btn">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="shop">
+    <h1>The whole world below your fingertips.</h1>
+    <div class="shop-items">
+      <div class="item">
+        <img src="img/aula.webp" alt="Keyboard">
+        <p><b>Aula F75</b><br>Bluetooth Keyboard 75% 87/2.4Ghz<br><br><b>Specifications:</b><br>Keycap: Dual Color PBT<br>Backlight: 16 million color RGB<br>Layout: 80 keys<br>Interface: Tri-mode<br>Battery: 4000mAh<br>Size: 322.7x143.2x43.1mm<br>Weight: 1023g<br>Reaper Switch<br>Price: ₱3,613.82</p>
+      </div>
+      <div class="item">
+        <img src="img/gamakay.webp" alt="Keyboard">
+        <p><b>Gamakay TK75HE</b><br>Hall Effect Wireless Custom Keyboard<br><br><b>Specifications:</b><br>Switch: Blue<br>Battery: 4000mAh<br>Structure: Gasket Mount<br>Foam: Sound-absorbing foam<br>Interface: Tri-mode<br>Keys: 81 keys<br>Price: ₱4,067.89</p>
+      </div>
+      <div class="item">
+        <img src="img/keychron.webp" alt="Keyboard">
+        <p><b>Keychron K8</b><br>Bluetooth Keyboard 60%<br><br><b>Specifications:</b><br>Switch: Gateron G Pro<br>Battery: 4000mAh<br>Number of keys: 87 keys<br>Interface: Tri-mode<br>Backlit Types: 18<br>Polling Rate: 90Hz-1000Hz<br>Price: ₱4,420.00</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>© Copyright 2025 | WASD Keyboards | All rights reserved</p>
+  </footer>
+  <script>
+    let menuBtn = document.getElementById("menu-btn");
+    let navMenu = document.getElementById("nav-menu");
+
+    menuBtn.addEventListener("click", function() {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
