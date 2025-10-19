@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WASD Keyboards | About</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="img/logo.png">Keyboards</div>
+    <button id="menu-btn">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="about">
+    <div class="about-text">
+      <h2>We have the keys...</h2>
+      <p>Here at WASD Keyboards, we strive to provide the best quality keyboards on the market. From entry-level keyboards to high-end boards, we have something that fits your style.</p>
+    </div>
+    <div class="about-text">
+      <h2>...and so do you.</h2>
+      <p>Contact us to find your ideal board. We’ll do our best to get you your dream keyboard—pun intended.</p>
+    </div>
+
+    <form class="contact-form">
+      <h3>Wanna know more?</h3>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Contact Number">
+      <textarea placeholder="Ask your questions and give your recommendations here"></textarea>
+      <div class="form-buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>© Copyright 2025 | WASD Keyboards | All rights reserved</p>
+  </footer>
+  <script>
+    let menuBtn = document.getElementById("menu-btn");
+    let navMenu = document.getElementById("nav-menu");
+
+    menuBtn.addEventListener("click", function() {
+      navMenu.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
